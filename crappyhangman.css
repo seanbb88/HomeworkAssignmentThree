@@ -1,0 +1,22 @@
+.main-container {
+    width: 95%; 
+    height: 200px; 
+    background-color: black; 
+    text-align: center; 
+}
+
+.container {
+    width: 20%; 
+    height: 150px;
+    display: inline-block;
+    background-color: green;
+    margin-top: 3%; 
+
+}
+
+.user-pick {
+    width: 20%; 
+    height: 50px;
+    background-color: purple; 
+    margin-top: 3%; 
+}

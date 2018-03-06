@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Psycic Game</title>
+  <link rel="stylesheet" type="text/css" href="../Homework3/psychic.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="container" id="container" >
+      <h1 id="game-title" class="game-title"> PSYCHIC GAME</h1>
+      <img id="crystalball" class="crystalball" src ="./crystalball.jpeg">
+    </div>
+
+    <div class="container2">
+      <h3 id="guess" class="guess" >Guess What Number The Computer Is Thinking Of! (1-9) </h3>
+
+      <div class="container3" id="buttons">
+        
+          <output class='style' id="your-wins">Your Wins: </output>
+          <br>
+          <output class='style' id="your-losses">Your Losses:</output>
+          <br>
+          <output class='style' id="your-guess">Your Guess:</output>
+          <br>
+          <output class='style' id="reveal-pick">Computer Guess: </output>
+          <br>
+          <output class="computer-guess" id="computer-guess">You have yet to guess anything.</output>
+      </div>
+
+    </div>
+  </div>
+ <script>
+  var number = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  var yourWins = document.getElementById('your-wins');
+  var yourLosses = document.getElementById('your-losses');
+  var keyInput = document.getElementById("your-guess");
+  var revealPick = document.getElementById('reveal-pick');
+  var guessStatus = document.getElementById('computer-guess');
+  var fireworks = document.getElementById('container'); 
+  var counter2 = 1;
+  var counter3 = 1;  
+  
+  
+document.onkeyup = function(event){
+
+  for (i = 0; i < number.length; i++){
+    do {
+      var randomPick = Math.floor(Math.random() * number.length);
+    } while (onkeyup)
+  } 
+keyInput = Number(event.key);
+revealPick = number[randomPick];
+
+var yourGuess = Number(keyInput);
+var computerGuess = Number(revealPick);
+
+document.getElementById("your-guess").innerHTML = ("Your Guess: " + yourGuess);
+document.getElementById("reveal-pick").innerHTML = ("Computer Guess: " + computerGuess); 
+
+
+if (yourGuess === computerGuess){
+  guessStatus.innerHTML = "Good Job! You Win!";
+  yourWins.innerHTML = ("Your Wins: " + counter3++);
+  document.getElementById("wrapper").style.backgroundImage = "url('fireworks.jpg')";
+  
+ } else {
+   yourLosses.innerHTML =  ("Your Losses: " + counter2++);
+   guessStatus.innerHTML = "You Lose"; 
+   document.getElementById("wrapper").style.backgroundImage = "";
+ }
+ 
+};
+
+ 
+</script>
+
+</body>
+</html>

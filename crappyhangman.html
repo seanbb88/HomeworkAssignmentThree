@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Crappy Hangman </title>
+  <link rel="stylesheet" type="text/css" href="../Homework3/crappyhangman.css">
+ 
+</head>
+
+<body>
+<div id="main-container" class="main-container">
+
+  <div id="container1" class="container">
+
+  </div>
+
+  <div id="container2" class="container">
+
+  </div>
+
+  <div id="container3" class="container">
+
+  </div>
+
+  <div id="container4" class="container">
+
+  </div>
+</div>
+
+<div id="user-pick" class="user-pick">
+
+</div>
+
+<script>
+var letterOne = document.getElementById('container1');
+var letterTwo = document.getElementById('container2');
+var letterThree = document.getElementById('container3');
+var letterFour = document.getElementById('container4');
+var userPick = document.getElementById('user-pick');
+var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+var word = "code";
+
+
+/*document.onkeypress = function (e) {
+    e = e || window.event;
+
+addEvent(document, "keypress", function (e) {
+    e = e || window.event;
+    // use e.keyCode
+});*/
+
+function addEvent(element, eventName, callback) {
+    if (element.addEventListener) {
+        element.addEventListener(eventName, callback, false);
+    } else if (element.attachEvent) {
+        element.attachEvent("on" + eventName, callback);
+    } else {
+        element["on" + eventName] = callback;
+    }
+}  console.log(addEvent);
+
+//document.onkeyup = function(event){
+  
+  /*for (i = 0; i < alphabet.length; i++){
+    var userPick = alphabet[i]; 
+    console.log(userPick);
+
+
+  }*/
+
+//}
+
+</script>
+
+</body>
+</html>

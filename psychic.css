@@ -1,0 +1,134 @@
+body {
+    background-color: black; 
+}
+
+.container {
+    width: 95%; 
+    height: 280px;
+    background-color: dimgray; 
+    text-align: center;
+    border: white double 5px; 
+    margin: auto; 
+}
+
+.game-title {
+    font-size: 50px; 
+    margin-top: 1%; 
+    margin-bottom: 1%; 
+}
+
+.crystalball {
+    margin-bottom: 1%; 
+    border: white solid 1px; 
+}
+
+.container2 {
+    width: 75%; 
+    height: 175px;
+    background-color: dimgray; 
+    text-align: center;
+    border: white double 5px; 
+    margin: auto; 
+    margin-top: 1%; 
+}
+
+.guess {
+    margin-top: 1%; 
+}
+
+.stats {
+    list-style-type: none; 
+    text-align: left;   
+}
+
+.computer-pick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.computer-guess {
+    font-size: 35px; 
+}
+
+.style {
+    font-size: 18px; 
+}
+
+@media screen and (max-width:649px){
+
+.guess {
+    font-size: 15px; 
+}
+
+.style {
+    font-size: 13px; 
+}
+
+.computer-guess {
+    font-size: 25px; 
+}
+
+.container2 {
+    height: 150px;
+    width: 70%; 
+}
+
+}
+
+@media screen and (max-width:550px){
+
+.guess {
+font-size: 12px; 
+}
+    
+.style {
+font-size: 10px; 
+}
+    
+.computer-guess {
+font-size: 18px; 
+}
+    
+.container2 {
+height: 140px;
+width: 70%; 
+ }
+    
+}
+
+@media screen and (max-width:450px){
+
+.game-title{
+font-size: 30px; 
+}
+
+.crystalball{
+height: 50%;
+width: 50%;
+}
+
+.container{
+width: 90%; 
+height: 200px;
+}
+
+.guess {
+font-size: 12px; 
+}
+        
+.style {
+font-size: 10px; 
+}
+        
+.computer-guess {
+font-size: 18px; 
+}
+        
+.container2 {
+height: 150px;
+width: 70%; 
+}
+        
+}
